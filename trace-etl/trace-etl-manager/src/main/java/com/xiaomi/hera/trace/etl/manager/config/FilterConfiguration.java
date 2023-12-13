@@ -29,17 +29,17 @@ public class FilterConfiguration {
         return registrationBean;
     }
 
-    @Bean
-    public FilterRegistrationBean filterCasBean() {
-        FilterRegistrationBean registrationBean = new FilterRegistrationBean();
-        registrationBean.setFilter(new HttpReqUserFilter());
-        registrationBean.addUrlPatterns("/*");
-        registrationBean.addInitParameter(ConstUtil.innerAuth, "false");
-        registrationBean.addInitParameter("IGNORE_URL", "/tracing/v1/*");
-        registrationBean.addInitParameter(ConstUtil.authTokenUrl, tokenParseUrl);
-        registrationBean.addInitParameter(ConstUtil.devMode,"false");
-
-        registrationBean.setOrder(0);
-        return registrationBean;
-    }
+//    @Bean
+//    public FilterRegistrationBean filterCasBean() {
+//        FilterRegistrationBean registrationBean = new FilterRegistrationBean();
+//        registrationBean.setFilter(new HttpReqUserFilter());
+//        registrationBean.addUrlPatterns("/*");
+//        registrationBean.addInitParameter(ConstUtil.innerAuth, "false");
+//        registrationBean.addInitParameter("IGNORE_URL", "/tracing/v1/*");
+//        registrationBean.addInitParameter(ConstUtil.authTokenUrl, tokenParseUrl);
+//        registrationBean.addInitParameter(ConstUtil.devMode,"false");
+//
+//        registrationBean.setOrder(0);
+//        return registrationBean;
+//    }
 }
