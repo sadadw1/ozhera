@@ -38,10 +38,10 @@ public class RocketMQConsumerService {
     @NacosValue("${mq.nameseraddr}")
     private String nameSerAddr;
 
-    @Value("${mq.server.topic}")
+    @NacosValue("${mq.server.topic}")
     private String topicName;
 
-    @Value("${mq.es.topic}")
+    @NacosValue("${mq.es.topic}")
     private String esTopicName;
 
     @Resource

@@ -34,7 +34,7 @@ public class RocketMQTraceSpanConsumer {
     @NacosValue("${mq.nameseraddr}")
     private String nameSerAddr;
 
-    @Value("${mq.es.topic}")
+    @NacosValue("${mq.es.topic}")
     private String topicName;
 
     @Autowired
